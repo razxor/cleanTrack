@@ -8,9 +8,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
+  return (    
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <footer className="h-20 shadow">
+          <p className="text-center">© 2024 CleanTrack. All rights reserved.</p>
+        </footer>
+      </body>
     </html>
   )
 }
